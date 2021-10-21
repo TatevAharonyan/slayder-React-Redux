@@ -1,0 +1,102 @@
+*{
+  box-sizing: border-box;
+}
+
+body, html {
+ margin: 0;
+ padding: 0;
+}
+
+#App {
+ position: relative;
+ width: 100vw;
+ height: 100vh;
+ background-color: #fff;
+}
+
+header {
+ height: 10%;
+ width: 100%;
+ box-sizing: border-box;
+
+}
+
+h1 {
+  text-align: center;
+  font-weight: 500;
+  color:rgba(39, 134, 212, 0.87);
+  font-size: 35px;
+  margin: 0;
+  padding: 3px;
+}
+
+.slider {
+ margin:0 auto;
+ width: 80%;
+ height: 90%;
+ position: relative;
+ overflow: hidden;
+}
+
+.img_slider {
+ width: 80vw;
+ height: 90%;
+}
+
+
+.img_wrapper{
+ /* height: fit-content; */
+ display: flex;
+ transition-duration: 1s;
+ position: relative;
+ z-index: 9;
+ height: 85vh;
+}
+
+.radio_input{
+ position: absolute;
+ /* bottom: 15px; */
+ bottom: 15%;
+ left:50%;
+ transform: translateX(-50%);
+ z-index: 999;
+}
+input {
+ margin: 0 3px;
+}
+
+.history {
+ display: flex;
+ color:royalblue;
+ text-align: center;
+ align-items: center;
+ flex-direction: column;
+ margin: 8px auto 0;
+ font-size: 16px;
+}
+
+@media (max-width : 990px){
+ .history{
+   font-size: 12.5px;
+ }
+}
+
+@media (max-width : 630px){
+ .radio_input {
+   bottom: 12%;
+ }
+
+ h1 {
+   font-size: 20px;
+   margin: 9px 0;
+ }
+
+ input {
+   margin: 0;
+ }
+
+ .history{
+   font-size: 12px;
+ }
+}
+
